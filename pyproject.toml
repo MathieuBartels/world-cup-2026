@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "world-cup-2026"
+version = "0.1.0"
+description = "Polymarket odds and Monte Carlo simulation for World Cup 2026 poule"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "httpx>=0.27",
+    "pydantic>=2.0",
+    "pyyaml>=6.0",
+    "rich>=13.0",
+]
+
+[project.scripts]
+wc26 = "world_cup_2026.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/world_cup_2026"]
+
+[tool.hatch.build.targets.sdist]
+only-include = ["src", "data", "docs", "README.md", "LICENSE"]

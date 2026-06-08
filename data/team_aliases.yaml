@@ -1,0 +1,163 @@
+teams:
+  Algeria:
+    abbr: alg
+    canonical: Algeria
+  Argentina:
+    abbr: arg
+    canonical: Argentina
+  Australia:
+    abbr: aus
+    canonical: Australia
+  Austria:
+    abbr: aut
+    canonical: Austria
+  Belgium:
+    abbr: bel
+    canonical: Belgium
+  Bosnia and Herzegovina:
+    abbr: bih
+    canonical: Bosnia and Herzegovina
+  Brazil:
+    abbr: bra
+    canonical: Brazil
+  Cabo Verde:
+    abbr: cvi
+    canonical: Cabo Verde
+  Canada:
+    abbr: can
+    canonical: Canada
+  Cape Verde:
+    abbr: cvi
+    canonical: Cabo Verde
+  Colombia:
+    abbr: col
+    canonical: Colombia
+  Congo DR:
+    abbr: cdr
+    canonical: DR Congo
+  Croatia:
+    abbr: hrv
+    canonical: Croatia
+  Curaçao:
+    abbr: kor
+    canonical: Curaçao
+  Czechia:
+    abbr: cze
+    canonical: Czechia
+  Côte d'Ivoire:
+    abbr: civ
+    canonical: Côte d'Ivoire
+  DR Congo:
+    abbr: cdr
+    canonical: DR Congo
+  Ecuador:
+    abbr: ecu
+    canonical: Ecuador
+  Egypt:
+    abbr: egy
+    canonical: Egypt
+  England:
+    abbr: eng
+    canonical: England
+  France:
+    abbr: fra
+    canonical: France
+  Germany:
+    abbr: ger
+    canonical: Germany
+  Ghana:
+    abbr: gha
+    canonical: Ghana
+  Haiti:
+    abbr: hai
+    canonical: Haiti
+  IR Iran:
+    abbr: irn
+    canonical: Iran
+  Iran:
+    abbr: irn
+    canonical: Iran
+  Iraq:
+    abbr: irq
+    canonical: Iraq
+  Ivory Coast:
+    abbr: civ
+    canonical: Côte d'Ivoire
+  Japan:
+    abbr: jpn
+    canonical: Japan
+  Jordan:
+    abbr: jor
+    canonical: Jordan
+  Korea Republic:
+    abbr: kr
+    canonical: Korea Republic
+  Mexico:
+    abbr: mex
+    canonical: Mexico
+  Morocco:
+    abbr: mar
+    canonical: Morocco
+  Netherlands:
+    abbr: nld
+    canonical: Netherlands
+  New Zealand:
+    abbr: nzl
+    canonical: New Zealand
+  Norway:
+    abbr: nor
+    canonical: Norway
+  Panama:
+    abbr: pan
+    canonical: Panama
+  Paraguay:
+    abbr: par
+    canonical: Paraguay
+  Portugal:
+    abbr: prt
+    canonical: Portugal
+  Qatar:
+    abbr: qat
+    canonical: Qatar
+  Saudi Arabia:
+    abbr: ksa
+    canonical: Saudi Arabia
+  Scotland:
+    abbr: sco
+    canonical: Scotland
+  Senegal:
+    abbr: sen
+    canonical: Senegal
+  South Africa:
+    abbr: rsa
+    canonical: South Africa
+  South Korea:
+    abbr: kr
+    canonical: Korea Republic
+  Spain:
+    abbr: esp
+    canonical: Spain
+  Sweden:
+    abbr: swe
+    canonical: Sweden
+  Switzerland:
+    abbr: che
+    canonical: Switzerland
+  Tunisia:
+    abbr: tun
+    canonical: Tunisia
+  Türkiye:
+    abbr: tur
+    canonical: Türkiye
+  USA:
+    abbr: usa
+    canonical: United States
+  United States:
+    abbr: usa
+    canonical: United States
+  Uruguay:
+    abbr: ury
+    canonical: Uruguay
+  Uzbekistan:
+    abbr: uzb
+    canonical: Uzbekistan

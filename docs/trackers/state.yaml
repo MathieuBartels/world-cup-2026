@@ -1,0 +1,10 @@
+current_phase: exact_scores
+status: done
+blockers: []
+metrics:
+  fixtures_total: 72
+  fixtures_mapped: 72
+  exact_score_events_found: 72
+  exact_score_events_missing: 0
+last_run: '2026-06-08T12:59:57.789610+00:00'
+last_output: /home/mathieu/Documents/world-cup-2026/data/odds/exact_scores_latest.json

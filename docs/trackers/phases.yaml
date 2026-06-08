@@ -1,0 +1,58 @@
+phases:
+- id: scaffold
+  name: 0 — Scaffold
+  status: done
+  started_at: '2026-06-08T12:46:26.829464+00:00'
+  completed_at: '2026-06-08T12:46:26.829464+00:00'
+  acceptance_criteria:
+  - pyproject.toml exists
+  - src/world_cup_2026 package layout exists
+  - CLI entrypoint wc26 registered
+  notes: ''
+- id: fixtures
+  name: 1 — Fixture data
+  status: done
+  started_at: '2026-06-08T12:46:26.829464+00:00'
+  completed_at: '2026-06-08T12:46:26.829464+00:00'
+  acceptance_criteria:
+  - 72 matches in data/fixtures/group_stage.yaml
+  - Team abbreviations in data/team_aliases.yaml
+  notes: ''
+- id: polymarket
+  name: 2 — Polymarket client
+  status: done
+  started_at: '2026-06-08T12:46:26.829464+00:00'
+  completed_at: '2026-06-08T12:46:26.829464+00:00'
+  acceptance_criteria:
+  - Can fetch event by slug
+  - Parses exact-score markets from event JSON
+  - Validated on MEX-RSA match
+  notes: ''
+- id: exact_scores
+  name: 3 — Highest odds report
+  status: done
+  started_at: '2026-06-08T12:46:26.829464+00:00'
+  completed_at: '2026-06-08T12:46:26.829464+00:00'
+  acceptance_criteria:
+  - CLI outputs top scoreline per match grouped by group
+  - Caches JSON to data/odds/exact_scores_latest.json
+  - Updates state.yaml metrics after run
+  notes: ''
+- id: monte_carlo
+  name: 4 — Monte Carlo engine
+  status: not_started
+  started_at: null
+  completed_at: null
+  acceptance_criteria:
+  - Sample full group-stage outcomes from normalized distributions
+  - Reproducible with fixed seed
+  notes: Deferred to Phase 2
+- id: poule
+  name: 5 — Poule integration
+  status: not_started
+  started_at: null
+  completed_at: null
+  acceptance_criteria:
+  - Configurable poule scoring rules
+  - Export suggested picks
+  notes: Deferred; waiting on poule rules from user
