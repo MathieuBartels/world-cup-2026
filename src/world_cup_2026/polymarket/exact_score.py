@@ -14,14 +14,37 @@ _SCORE_PATTERN = re.compile(
 _OTHER_PATTERN = re.compile(r"Any Other Score", re.IGNORECASE)
 
 
+def _yes_probability_from_prices(yes_price: float, no_price: float) -> float:
+    """Implied Yes probability using both binary legs (lowest decimal odd wins)."""
+    candidates: list[float] = []
+    if 0 < yes_price < 1:
+        candidates.append(yes_price)
+    if 0 < no_price < 1:
+        candidates.append(1.0 - no_price)
+    if not candidates:
+        return 0.0
+    # Lowest decimal odd for Yes = highest implied probability across quotes.
+    return max(candidates)
+
+
 def _market_probability(market: dict[str, Any]) -> float:
     prices = parse_json_field(market.get("outcomePrices") or "[]")
     if not prices:
         return 0.0
+
     try:
-        prob = float(prices[0])
+        yes_price = float(prices[0])
     except (TypeError, ValueError):
-        return 0.0
+        yes_price = 0.0
+
+    no_price = 0.0
+    if len(prices) >= 2:
+        try:
+            no_price = float(prices[1])
+        except (TypeError, ValueError):
+            pass
+
+    prob = _yes_probability_from_prices(yes_price, no_price)
 
     # Prefer live order book when outcomePrices look stale
     best_bid = market.get("bestBid")
