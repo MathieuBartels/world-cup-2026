@@ -37,6 +37,12 @@ class ExactScoreOutcome(BaseModel):
         return f"{self.home_goals}-{self.away_goals}"
 
     @property
+    def display_label(self) -> str:
+        if self.is_other:
+            return "Other"
+        return self.label
+
+    @property
     def decimal_odds(self) -> float | None:
         if self.probability <= 0:
             return None

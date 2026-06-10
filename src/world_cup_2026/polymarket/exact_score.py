@@ -96,9 +96,11 @@ def pick_top_score(outcomes: list[ExactScoreOutcome]) -> tuple[ExactScoreOutcome
     named = [o for o in outcomes if not o.is_other]
     other = next((o for o in outcomes if o.is_other), None)
     if not named:
-        return None, other
-    top = max(named, key=lambda o: o.probability)
-    return top, other
+        return other, other
+    top_named = max(named, key=lambda o: o.probability)
+    if other is not None and other.probability > top_named.probability:
+        return other, other
+    return top_named, other
 
 
 def fetch_exact_scores_for_fixture(

@@ -4,6 +4,32 @@ Chronological record of project activity. Newest entries at the top.
 
 ---
 
+## 2026-06-10 — Exact-score fetch run
+
+**Phase:** exact_scores
+
+**What:** Fetched exact-score odds for 72 group-stage matches.
+
+**Result:** Found 72/72 (100.0% coverage).
+
+**Next:** Re-run as Polymarket adds markets; begin Monte Carlo phase when coverage is sufficient.
+
+---
+
+
+## 2026-06-10 — Exact-score fetch run
+
+**Phase:** exact_scores
+
+**What:** Fetched exact-score odds for 72 group-stage matches.
+
+**Result:** Found 72/72 (100.0% coverage).
+
+**Next:** Re-run as Polymarket adds markets; begin Monte Carlo phase when coverage is sufficient.
+
+---
+
+
 ## 2026-06-08 — Exact-score fetch run
 
 **Phase:** exact_scores

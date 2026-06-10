@@ -17,6 +17,7 @@ from world_cup_2026.trackers import append_log, mark_phases_complete, update_sta
 
 _PACKAGE_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_OUTPUT = _PACKAGE_ROOT / "data" / "odds" / "exact_scores_latest.json"
+DEFAULT_MARKDOWN = _PACKAGE_ROOT / "docs" / "exact_scores_by_group.md"
 
 console = Console()
 
@@ -61,7 +62,7 @@ def print_report(report: ExactScoresReport) -> None:
                 odds = top.decimal_odds
                 odds_str = f"{odds:.2f}" if odds else "—"
                 console.print(f"  [green]{header}[/green]")
-                console.print(f"    Top exact score: [bold]{top.label}[/bold]  ({pct:.1f}% · {odds_str} decimal)")
+                console.print(f"    Top exact score: [bold]{top.display_label}[/bold]  ({pct:.1f}% · {odds_str} decimal)")
                 console.print(f"    [link={fixture.polymarket_url}]{fixture.polymarket_url}[/link]")
             else:
                 console.print(f"  [yellow]{header}[/yellow]")
@@ -84,6 +85,46 @@ def write_json_report(report: ExactScoresReport, output_path: Path) -> None:
     output_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
 
 
+def write_markdown_report(report: ExactScoresReport, output_path: Path) -> None:
+    grouped: dict[str, list[MatchExactScoreResult]] = {}
+    for result in report.results:
+        grouped.setdefault(result.fixture.group, []).append(result)
+
+    lines = [
+        "# World Cup 2026 — Highest-probability exact scores by group",
+        "",
+        f"Generated from Polymarket odds on `{report.generated_at}`.",
+        "",
+        "Scores are **home–away**. Dates follow the FIFA schedule.",
+        "",
+        "> Polymarket lists each exact score as a separate binary market, so probabilities across scorelines often sum to more than 100%. Use rankings within a match rather than raw percentages alone.",
+        "",
+    ]
+
+    for group in sorted(grouped):
+        lines.append(f"## Group {group}")
+        lines.append("")
+        lines.append("| Date | Match | Top exact score | Probability | Decimal odds |")
+        lines.append("|------|-------|-----------------|-------------|--------------|")
+        for result in sorted(grouped[group], key=lambda r: (r.fixture.date, r.fixture.match_number)):
+            fixture = result.fixture
+            match = f"{fixture.home} vs {fixture.away}"
+            if result.found and result.top_score:
+                top = result.top_score
+                pct = top.probability * 100
+                odds = top.decimal_odds
+                odds_str = f"{odds:.2f}" if odds else "—"
+                lines.append(
+                    f"| {fixture.date} | {match} | **{top.display_label}** | {pct:.1f}% | {odds_str} |"
+                )
+            else:
+                lines.append(f"| {fixture.date} | {match} | — | — | — |")
+        lines.append("")
+
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text("\n".join(lines), encoding="utf-8")
+
+
 def cmd_exact_scores(args: argparse.Namespace) -> int:
     results = fetch_all_exact_scores(args.fixtures)
     report = build_report(results)
@@ -93,7 +134,10 @@ def cmd_exact_scores(args: argparse.Namespace) -> int:
     output_path = Path(args.output) if args.output else DEFAULT_OUTPUT
     if args.json or args.output:
         write_json_report(report, output_path)
+        markdown_path = DEFAULT_MARKDOWN
+        write_markdown_report(report, markdown_path)
         console.print(f"\n[dim]Wrote {output_path}[/dim]")
+        console.print(f"[dim]Wrote {markdown_path}[/dim]")
 
     update_state(
         found=report.found,
