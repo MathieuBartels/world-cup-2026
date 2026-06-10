@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import Literal
+
 from pydantic import BaseModel, Field
 
 
@@ -49,11 +51,24 @@ class ExactScoreOutcome(BaseModel):
         return round(1.0 / self.probability, 2)
 
 
+class LikelyWinnerOutcome(BaseModel):
+    label: str
+    side: Literal["home", "away", "draw"]
+    probability: float
+
+    @property
+    def decimal_odds(self) -> float | None:
+        if self.probability <= 0:
+            return None
+        return round(1.0 / self.probability, 2)
+
+
 class MatchExactScoreResult(BaseModel):
     fixture: MatchFixture
     found: bool
     top_score: ExactScoreOutcome | None = None
     other_score: ExactScoreOutcome | None = None
+    likely_winner: LikelyWinnerOutcome | None = None
     all_outcomes: list[ExactScoreOutcome] = Field(default_factory=list)
     error: str | None = None
 

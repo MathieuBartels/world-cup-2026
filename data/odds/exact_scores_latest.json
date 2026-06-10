@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10T10:09:59.412625+00:00",
+  "generated_at": "2026-06-10T10:13:31.102545+00:00",
   "total": 72,
   "found": 72,
   "missing": 0,
@@ -30,6 +30,11 @@
         "label": "Any Other Score",
         "probability": 0.085,
         "is_other": true
+      },
+      "likely_winner": {
+        "label": "Mexico",
+        "side": "home",
+        "probability": 0.6950000000000001
       },
       "all_outcomes": [
         {
@@ -181,6 +186,11 @@
         "probability": 0.0495,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "Korea Republic",
+        "side": "home",
+        "probability": 0.365
+      },
       "all_outcomes": [
         {
           "home_goals": 1,
@@ -330,6 +340,11 @@
         "label": "Any Other Score",
         "probability": 0.040000000000000036,
         "is_other": true
+      },
+      "likely_winner": {
+        "label": "Canada",
+        "side": "home",
+        "probability": 0.535
       },
       "all_outcomes": [
         {
@@ -481,6 +496,11 @@
         "probability": 0.075,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "United States",
+        "side": "home",
+        "probability": 0.495
+      },
       "all_outcomes": [
         {
           "home_goals": 1,
@@ -630,6 +650,11 @@
         "label": "Any Other Score",
         "probability": 0.12,
         "is_other": true
+      },
+      "likely_winner": {
+        "label": "Scotland",
+        "side": "away",
+        "probability": 0.625
       },
       "all_outcomes": [
         {
@@ -781,6 +806,11 @@
         "probability": 0.09,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "T\u00fcrkiye",
+        "side": "away",
+        "probability": 0.565
+      },
       "all_outcomes": [
         {
           "home_goals": 0,
@@ -931,19 +961,17 @@
         "probability": 0.09050000000000002,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "Brazil",
+        "side": "home",
+        "probability": 0.585
+      },
       "all_outcomes": [
         {
           "home_goals": 1,
           "away_goals": 0,
           "label": "1-0",
           "probability": 0.14,
-          "is_other": false
-        },
-        {
-          "home_goals": 1,
-          "away_goals": 1,
-          "label": "1-1",
-          "probability": 0.13,
           "is_other": false
         },
         {
@@ -954,10 +982,17 @@
           "is_other": false
         },
         {
+          "home_goals": 1,
+          "away_goals": 1,
+          "label": "1-1",
+          "probability": 0.125,
+          "is_other": false
+        },
+        {
           "home_goals": 2,
           "away_goals": 1,
           "label": "2-1",
-          "probability": 0.105,
+          "probability": 0.1,
           "is_other": false
         },
         {
@@ -1080,6 +1115,11 @@
         "label": "Any Other Score",
         "probability": 0.195,
         "is_other": true
+      },
+      "likely_winner": {
+        "label": "Switzerland",
+        "side": "away",
+        "probability": 0.805
       },
       "all_outcomes": [
         {
@@ -1231,6 +1271,11 @@
         "probability": 0.030000000000000027,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "Ecuador",
+        "side": "away",
+        "probability": 0.395
+      },
       "all_outcomes": [
         {
           "home_goals": 0,
@@ -1381,6 +1426,11 @@
         "probability": 0.465,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "Germany",
+        "side": "home",
+        "probability": 0.9365
+      },
       "all_outcomes": [
         {
           "home_goals": null,
@@ -1400,7 +1450,7 @@
           "home_goals": 2,
           "away_goals": 0,
           "label": "2-0",
-          "probability": 0.11,
+          "probability": 0.1,
           "is_other": false
         },
         {
@@ -1530,6 +1580,11 @@
         "label": "Any Other Score",
         "probability": 0.31000000000000005,
         "is_other": true
+      },
+      "likely_winner": {
+        "label": "Netherlands",
+        "side": "home",
+        "probability": 0.465
       },
       "all_outcomes": [
         {
@@ -1681,6 +1736,11 @@
         "probability": 0.095,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "Sweden",
+        "side": "home",
+        "probability": 0.505
+      },
       "all_outcomes": [
         {
           "home_goals": 1,
@@ -1700,7 +1760,7 @@
           "home_goals": 2,
           "away_goals": 0,
           "label": "2-0",
-          "probability": 0.105,
+          "probability": 0.1,
           "is_other": false
         },
         {
@@ -1735,7 +1795,7 @@
           "home_goals": 1,
           "away_goals": 2,
           "label": "1-2",
-          "probability": 0.05500000000000005,
+          "probability": 0.075,
           "is_other": false
         },
         {
@@ -1743,6 +1803,13 @@
           "away_goals": 2,
           "label": "0-2",
           "probability": 0.0505,
+          "is_other": false
+        },
+        {
+          "home_goals": 2,
+          "away_goals": 2,
+          "label": "2-2",
+          "probability": 0.04600000000000004,
           "is_other": false
         },
         {
@@ -1756,14 +1823,7 @@
           "home_goals": 3,
           "away_goals": 1,
           "label": "3-1",
-          "probability": 0.0445,
-          "is_other": false
-        },
-        {
-          "home_goals": 2,
-          "away_goals": 2,
-          "label": "2-2",
-          "probability": 0.0415,
+          "probability": 0.04500000000000004,
           "is_other": false
         },
         {
@@ -1828,8 +1888,13 @@
         "home_goals": null,
         "away_goals": null,
         "label": "Any Other Score",
-        "probability": 0.09,
+        "probability": 0.11,
         "is_other": true
+      },
+      "likely_winner": {
+        "label": "Uruguay",
+        "side": "away",
+        "probability": 0.675
       },
       "all_outcomes": [
         {
@@ -1850,14 +1915,14 @@
           "home_goals": null,
           "away_goals": null,
           "label": "Any Other Score",
-          "probability": 0.09,
+          "probability": 0.11,
           "is_other": true
         },
         {
           "home_goals": 1,
           "away_goals": 1,
           "label": "1-1",
-          "probability": 0.085,
+          "probability": 0.09,
           "is_other": false
         },
         {
@@ -1886,13 +1951,6 @@
           "away_goals": 1,
           "label": "2-1",
           "probability": 0.04500000000000004,
-          "is_other": false
-        },
-        {
-          "home_goals": 1,
-          "away_goals": 0,
-          "label": "1-0",
-          "probability": 0.0415,
           "is_other": false
         },
         {
@@ -1945,6 +2003,13 @@
           "is_other": false
         },
         {
+          "home_goals": 1,
+          "away_goals": 0,
+          "label": "1-0",
+          "probability": 0.0345,
+          "is_other": false
+        },
+        {
           "home_goals": 3,
           "away_goals": 3,
           "label": "3-3",
@@ -1980,6 +2045,11 @@
         "label": "Any Other Score",
         "probability": 0.245,
         "is_other": true
+      },
+      "likely_winner": {
+        "label": "Spain",
+        "side": "home",
+        "probability": 0.905
       },
       "all_outcomes": [
         {
@@ -2131,6 +2201,11 @@
         "probability": 0.34,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "Iran",
+        "side": "home",
+        "probability": 0.515
+      },
       "all_outcomes": [
         {
           "home_goals": null,
@@ -2168,6 +2243,13 @@
           "is_other": false
         },
         {
+          "home_goals": 2,
+          "away_goals": 1,
+          "label": "2-1",
+          "probability": 0.09,
+          "is_other": false
+        },
+        {
           "home_goals": 0,
           "away_goals": 1,
           "label": "0-1",
@@ -2175,10 +2257,10 @@
           "is_other": false
         },
         {
-          "home_goals": 2,
-          "away_goals": 1,
-          "label": "2-1",
-          "probability": 0.08,
+          "home_goals": 1,
+          "away_goals": 2,
+          "label": "1-2",
+          "probability": 0.07,
           "is_other": false
         },
         {
@@ -2192,13 +2274,6 @@
           "home_goals": 0,
           "away_goals": 2,
           "label": "0-2",
-          "probability": 0.06000000000000005,
-          "is_other": false
-        },
-        {
-          "home_goals": 1,
-          "away_goals": 2,
-          "label": "1-2",
           "probability": 0.06000000000000005,
           "is_other": false
         },
@@ -2231,24 +2306,24 @@
           "is_other": false
         },
         {
-          "home_goals": 3,
-          "away_goals": 3,
-          "label": "3-3",
-          "probability": 0.031000000000000028,
-          "is_other": false
-        },
-        {
           "home_goals": 1,
           "away_goals": 3,
           "label": "1-3",
-          "probability": 0.0265,
+          "probability": 0.0315,
           "is_other": false
         },
         {
           "home_goals": 2,
           "away_goals": 3,
           "label": "2-3",
-          "probability": 0.026000000000000023,
+          "probability": 0.031000000000000028,
+          "is_other": false
+        },
+        {
+          "home_goals": 3,
+          "away_goals": 3,
+          "label": "3-3",
+          "probability": 0.031000000000000028,
           "is_other": false
         }
       ],
@@ -2281,6 +2356,11 @@
         "probability": 0.09,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "Belgium",
+        "side": "home",
+        "probability": 0.585
+      },
       "all_outcomes": [
         {
           "home_goals": 1,
@@ -2307,7 +2387,7 @@
           "home_goals": 2,
           "away_goals": 1,
           "label": "2-1",
-          "probability": 0.1,
+          "probability": 0.105,
           "is_other": false
         },
         {
@@ -2431,6 +2511,11 @@
         "probability": 0.29000000000000004,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "France",
+        "side": "home",
+        "probability": 0.665
+      },
       "all_outcomes": [
         {
           "home_goals": null,
@@ -2534,7 +2619,7 @@
           "home_goals": 2,
           "away_goals": 3,
           "label": "2-3",
-          "probability": 0.0315,
+          "probability": 0.03200000000000003,
           "is_other": false
         },
         {
@@ -2580,6 +2665,11 @@
         "label": "Any Other Score",
         "probability": 0.345,
         "is_other": true
+      },
+      "likely_winner": {
+        "label": "Norway",
+        "side": "away",
+        "probability": 0.805
       },
       "all_outcomes": [
         {
@@ -2731,6 +2821,11 @@
         "probability": 0.30500000000000005,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "Argentina",
+        "side": "home",
+        "probability": 0.6950000000000001
+      },
       "all_outcomes": [
         {
           "home_goals": null,
@@ -2764,20 +2859,20 @@
           "home_goals": 1,
           "away_goals": 1,
           "label": "1-1",
-          "probability": 0.09,
-          "is_other": false
-        },
-        {
-          "home_goals": 0,
-          "away_goals": 0,
-          "label": "0-0",
-          "probability": 0.075,
+          "probability": 0.085,
           "is_other": false
         },
         {
           "home_goals": 3,
           "away_goals": 0,
           "label": "3-0",
+          "probability": 0.08,
+          "is_other": false
+        },
+        {
+          "home_goals": 0,
+          "away_goals": 0,
+          "label": "0-0",
           "probability": 0.075,
           "is_other": false
         },
@@ -2827,7 +2922,7 @@
           "home_goals": 1,
           "away_goals": 3,
           "label": "1-3",
-          "probability": 0.0265,
+          "probability": 0.026000000000000023,
           "is_other": false
         },
         {
@@ -2880,6 +2975,11 @@
         "label": "Any Other Score",
         "probability": 0.345,
         "is_other": true
+      },
+      "likely_winner": {
+        "label": "Austria",
+        "side": "home",
+        "probability": 0.735
       },
       "all_outcomes": [
         {
@@ -3031,6 +3131,11 @@
         "probability": 0.35,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "Ghana",
+        "side": "home",
+        "probability": 0.465
+      },
       "all_outcomes": [
         {
           "home_goals": null,
@@ -3181,6 +3286,11 @@
         "probability": 0.35,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "England",
+        "side": "home",
+        "probability": 0.565
+      },
       "all_outcomes": [
         {
           "home_goals": 3,
@@ -3211,6 +3321,13 @@
           "is_other": true
         },
         {
+          "home_goals": 1,
+          "away_goals": 1,
+          "label": "1-1",
+          "probability": 0.135,
+          "is_other": false
+        },
+        {
           "home_goals": 0,
           "away_goals": 1,
           "label": "0-1",
@@ -3235,13 +3352,6 @@
           "home_goals": 1,
           "away_goals": 0,
           "label": "1-0",
-          "probability": 0.08,
-          "is_other": false
-        },
-        {
-          "home_goals": 1,
-          "away_goals": 1,
-          "label": "1-1",
           "probability": 0.08,
           "is_other": false
         },
@@ -3291,7 +3401,7 @@
           "home_goals": 3,
           "away_goals": 3,
           "label": "3-3",
-          "probability": 0.0335,
+          "probability": 0.03500000000000003,
           "is_other": false
         },
         {
@@ -3330,6 +3440,11 @@
         "label": "Any Other Score",
         "probability": 0.15000000000000002,
         "is_other": true
+      },
+      "likely_winner": {
+        "label": "Portugal",
+        "side": "home",
+        "probability": 0.765
       },
       "all_outcomes": [
         {
@@ -3481,6 +3596,11 @@
         "probability": 0.35,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "Colombia",
+        "side": "away",
+        "probability": 0.6950000000000001
+      },
       "all_outcomes": [
         {
           "home_goals": null,
@@ -3631,6 +3751,11 @@
         "probability": 0.345,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "Czechia",
+        "side": "home",
+        "probability": 0.495
+      },
       "all_outcomes": [
         {
           "home_goals": null,
@@ -3650,7 +3775,7 @@
           "home_goals": 2,
           "away_goals": 0,
           "label": "2-0",
-          "probability": 0.105,
+          "probability": 0.11,
           "is_other": false
         },
         {
@@ -3672,13 +3797,6 @@
           "away_goals": 1,
           "label": "1-1",
           "probability": 0.08,
-          "is_other": false
-        },
-        {
-          "home_goals": 0,
-          "away_goals": 0,
-          "label": "0-0",
-          "probability": 0.075,
           "is_other": false
         },
         {
@@ -3714,6 +3832,13 @@
           "away_goals": 0,
           "label": "3-0",
           "probability": 0.075,
+          "is_other": false
+        },
+        {
+          "home_goals": 0,
+          "away_goals": 0,
+          "label": "0-0",
+          "probability": 0.065,
           "is_other": false
         },
         {
@@ -3768,9 +3893,9 @@
       },
       "found": true,
       "top_score": {
-        "home_goals": 3,
-        "away_goals": 2,
-        "label": "3-2",
+        "home_goals": 0,
+        "away_goals": 0,
+        "label": "0-0",
         "probability": 0.47,
         "is_other": false
       },
@@ -3781,7 +3906,19 @@
         "probability": 0.35,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "Switzerland",
+        "side": "home",
+        "probability": 0.605
+      },
       "all_outcomes": [
+        {
+          "home_goals": 0,
+          "away_goals": 0,
+          "label": "0-0",
+          "probability": 0.47,
+          "is_other": false
+        },
         {
           "home_goals": 3,
           "away_goals": 2,
@@ -3794,13 +3931,6 @@
           "away_goals": 1,
           "label": "3-1",
           "probability": 0.465,
-          "is_other": false
-        },
-        {
-          "home_goals": 0,
-          "away_goals": 0,
-          "label": "0-0",
-          "probability": 0.455,
           "is_other": false
         },
         {
@@ -3931,6 +4061,11 @@
         "probability": 0.34,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "Canada",
+        "side": "home",
+        "probability": 0.745
+      },
       "all_outcomes": [
         {
           "home_goals": null,
@@ -3943,7 +4078,7 @@
           "home_goals": 2,
           "away_goals": 0,
           "label": "2-0",
-          "probability": 0.17000000000000004,
+          "probability": 0.16000000000000003,
           "is_other": false
         },
         {
@@ -4041,14 +4176,14 @@
           "home_goals": 0,
           "away_goals": 3,
           "label": "0-3",
-          "probability": 0.031000000000000028,
+          "probability": 0.0315,
           "is_other": false
         },
         {
           "home_goals": 1,
           "away_goals": 3,
           "label": "1-3",
-          "probability": 0.0305,
+          "probability": 0.031000000000000028,
           "is_other": false
         }
       ],
@@ -4081,6 +4216,11 @@
         "probability": 0.35,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "Mexico",
+        "side": "home",
+        "probability": 0.535
+      },
       "all_outcomes": [
         {
           "home_goals": 0,
@@ -4105,16 +4245,16 @@
         },
         {
           "home_goals": 3,
-          "away_goals": 0,
-          "label": "3-0",
+          "away_goals": 1,
+          "label": "3-1",
           "probability": 0.445,
           "is_other": false
         },
         {
           "home_goals": 3,
-          "away_goals": 1,
-          "label": "3-1",
-          "probability": 0.44,
+          "away_goals": 0,
+          "label": "3-0",
+          "probability": 0.445,
           "is_other": false
         },
         {
@@ -4230,6 +4370,11 @@
         "label": "Any Other Score",
         "probability": 0.47,
         "is_other": true
+      },
+      "likely_winner": {
+        "label": "Brazil",
+        "side": "home",
+        "probability": 0.905
       },
       "all_outcomes": [
         {
@@ -4381,6 +4526,11 @@
         "probability": 0.345,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "Morocco",
+        "side": "away",
+        "probability": 0.495
+      },
       "all_outcomes": [
         {
           "home_goals": 0,
@@ -4530,6 +4680,11 @@
         "label": "Any Other Score",
         "probability": 0.35,
         "is_other": true
+      },
+      "likely_winner": {
+        "label": "T\u00fcrkiye",
+        "side": "home",
+        "probability": 0.43500000000000005
       },
       "all_outcomes": [
         {
@@ -4681,6 +4836,11 @@
         "probability": 0.35,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "United States",
+        "side": "home",
+        "probability": 0.555
+      },
       "all_outcomes": [
         {
           "home_goals": null,
@@ -4774,31 +4934,31 @@
           "is_other": false
         },
         {
-          "home_goals": 2,
-          "away_goals": 3,
-          "label": "2-3",
-          "probability": 0.03300000000000003,
-          "is_other": false
-        },
-        {
           "home_goals": 0,
           "away_goals": 3,
           "label": "0-3",
-          "probability": 0.03200000000000003,
-          "is_other": false
-        },
-        {
-          "home_goals": 1,
-          "away_goals": 3,
-          "label": "1-3",
-          "probability": 0.03200000000000003,
+          "probability": 0.0345,
           "is_other": false
         },
         {
           "home_goals": 3,
           "away_goals": 3,
           "label": "3-3",
-          "probability": 0.03200000000000003,
+          "probability": 0.0345,
+          "is_other": false
+        },
+        {
+          "home_goals": 1,
+          "away_goals": 3,
+          "label": "1-3",
+          "probability": 0.03400000000000003,
+          "is_other": false
+        },
+        {
+          "home_goals": 2,
+          "away_goals": 3,
+          "label": "2-3",
+          "probability": 0.03300000000000003,
           "is_other": false
         }
       ],
@@ -4830,6 +4990,11 @@
         "label": "Any Other Score",
         "probability": 0.35,
         "is_other": true
+      },
+      "likely_winner": {
+        "label": "Germany",
+        "side": "home",
+        "probability": 0.625
       },
       "all_outcomes": [
         {
@@ -4981,6 +5146,11 @@
         "probability": 0.35,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "Ecuador",
+        "side": "home",
+        "probability": 0.81
+      },
       "all_outcomes": [
         {
           "home_goals": 0,
@@ -5130,6 +5300,11 @@
         "label": "Any Other Score",
         "probability": 0.35,
         "is_other": true
+      },
+      "likely_winner": {
+        "label": "Netherlands",
+        "side": "home",
+        "probability": 0.595
       },
       "all_outcomes": [
         {
@@ -5281,6 +5456,11 @@
         "probability": 0.345,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "Japan",
+        "side": "away",
+        "probability": 0.575
+      },
       "all_outcomes": [
         {
           "home_goals": null,
@@ -5430,6 +5610,11 @@
         "label": "Any Other Score",
         "probability": 0.35,
         "is_other": true
+      },
+      "likely_winner": {
+        "label": "Uruguay",
+        "side": "home",
+        "probability": 0.6950000000000001
       },
       "all_outcomes": [
         {
@@ -5581,6 +5766,11 @@
         "probability": 0.35,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "Spain",
+        "side": "home",
+        "probability": 0.88
+      },
       "all_outcomes": [
         {
           "home_goals": null,
@@ -5684,14 +5874,14 @@
           "home_goals": 3,
           "away_goals": 3,
           "label": "3-3",
-          "probability": 0.031000000000000028,
+          "probability": 0.0305,
           "is_other": false
         },
         {
           "home_goals": 1,
           "away_goals": 3,
           "label": "1-3",
-          "probability": 0.031000000000000028,
+          "probability": 0.0305,
           "is_other": false
         },
         {
@@ -5730,6 +5920,11 @@
         "label": "Any Other Score",
         "probability": 0.35,
         "is_other": true
+      },
+      "likely_winner": {
+        "label": "Belgium",
+        "side": "home",
+        "probability": 0.7
       },
       "all_outcomes": [
         {
@@ -5881,6 +6076,11 @@
         "probability": 0.35,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "Egypt",
+        "side": "away",
+        "probability": 0.555
+      },
       "all_outcomes": [
         {
           "home_goals": null,
@@ -6030,6 +6230,11 @@
         "label": "Any Other Score",
         "probability": 0.34,
         "is_other": true
+      },
+      "likely_winner": {
+        "label": "Norway",
+        "side": "home",
+        "probability": 0.445
       },
       "all_outcomes": [
         {
@@ -6181,6 +6386,11 @@
         "probability": 0.35,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "France",
+        "side": "home",
+        "probability": 0.865
+      },
       "all_outcomes": [
         {
           "home_goals": 0,
@@ -6330,6 +6540,11 @@
         "label": "Any Other Score",
         "probability": 0.345,
         "is_other": true
+      },
+      "likely_winner": {
+        "label": "Argentina",
+        "side": "home",
+        "probability": 0.595
       },
       "all_outcomes": [
         {
@@ -6481,6 +6696,11 @@
         "probability": 0.35,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "Algeria",
+        "side": "away",
+        "probability": 0.655
+      },
       "all_outcomes": [
         {
           "home_goals": null,
@@ -6630,6 +6850,11 @@
         "label": "Any Other Score",
         "probability": 0.35,
         "is_other": true
+      },
+      "likely_winner": {
+        "label": "England",
+        "side": "home",
+        "probability": 0.735
       },
       "all_outcomes": [
         {
@@ -6781,6 +7006,11 @@
         "probability": 0.35,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "Croatia",
+        "side": "away",
+        "probability": 0.63
+      },
       "all_outcomes": [
         {
           "home_goals": 2,
@@ -6931,6 +7161,11 @@
         "probability": 0.35,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "Portugal",
+        "side": "home",
+        "probability": 0.785
+      },
       "all_outcomes": [
         {
           "home_goals": 1,
@@ -7078,8 +7313,13 @@
         "home_goals": null,
         "away_goals": null,
         "label": "Any Other Score",
-        "probability": 0.345,
+        "probability": 0.34,
         "is_other": true
+      },
+      "likely_winner": {
+        "label": "Colombia",
+        "side": "home",
+        "probability": 0.665
       },
       "all_outcomes": [
         {
@@ -7121,7 +7361,7 @@
           "home_goals": null,
           "away_goals": null,
           "label": "Any Other Score",
-          "probability": 0.345,
+          "probability": 0.34,
           "is_other": true
         },
         {
@@ -7230,6 +7470,11 @@
         "label": "Any Other Score",
         "probability": 0.35,
         "is_other": true
+      },
+      "likely_winner": {
+        "label": "Brazil",
+        "side": "away",
+        "probability": 0.665
       },
       "all_outcomes": [
         {
@@ -7381,6 +7626,11 @@
         "probability": 0.35,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "Morocco",
+        "side": "home",
+        "probability": 0.745
+      },
       "all_outcomes": [
         {
           "home_goals": 3,
@@ -7530,6 +7780,11 @@
         "label": "Any Other Score",
         "probability": 0.35,
         "is_other": true
+      },
+      "likely_winner": {
+        "label": "Switzerland",
+        "side": "home",
+        "probability": 0.455
       },
       "all_outcomes": [
         {
@@ -7681,6 +7936,11 @@
         "probability": 0.345,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "Draw",
+        "side": "draw",
+        "probability": 0.235
+      },
       "all_outcomes": [
         {
           "home_goals": null,
@@ -7700,7 +7960,7 @@
           "home_goals": 2,
           "away_goals": 0,
           "label": "2-0",
-          "probability": 0.14,
+          "probability": 0.105,
           "is_other": false
         },
         {
@@ -7708,6 +7968,13 @@
           "away_goals": 1,
           "label": "2-1",
           "probability": 0.1,
+          "is_other": false
+        },
+        {
+          "home_goals": 1,
+          "away_goals": 2,
+          "label": "1-2",
+          "probability": 0.09,
           "is_other": false
         },
         {
@@ -7753,13 +8020,6 @@
           "is_other": false
         },
         {
-          "home_goals": 1,
-          "away_goals": 2,
-          "label": "1-2",
-          "probability": 0.06000000000000005,
-          "is_other": false
-        },
-        {
           "home_goals": 2,
           "away_goals": 2,
           "label": "2-2",
@@ -7798,7 +8058,7 @@
           "home_goals": 0,
           "away_goals": 2,
           "label": "0-2",
-          "probability": 0.03600000000000003,
+          "probability": 0.0355,
           "is_other": false
         }
       ],
@@ -7830,6 +8090,11 @@
         "label": "Any Other Score",
         "probability": 0.35,
         "is_other": true
+      },
+      "likely_winner": {
+        "label": "Mexico",
+        "side": "away",
+        "probability": 0.535
       },
       "all_outcomes": [
         {
@@ -7971,22 +8236,27 @@
         "home_goals": 0,
         "away_goals": 3,
         "label": "0-3",
-        "probability": 0.445,
+        "probability": 0.45,
         "is_other": false
       },
       "other_score": {
         "home_goals": null,
         "away_goals": null,
         "label": "Any Other Score",
-        "probability": 0.34,
+        "probability": 0.35,
         "is_other": true
+      },
+      "likely_winner": {
+        "label": "Korea Republic",
+        "side": "away",
+        "probability": 0.495
       },
       "all_outcomes": [
         {
           "home_goals": 0,
           "away_goals": 3,
           "label": "0-3",
-          "probability": 0.445,
+          "probability": 0.45,
           "is_other": false
         },
         {
@@ -8014,7 +8284,7 @@
           "home_goals": null,
           "away_goals": null,
           "label": "Any Other Score",
-          "probability": 0.34,
+          "probability": 0.35,
           "is_other": true
         },
         {
@@ -8130,6 +8400,11 @@
         "label": "Any Other Score",
         "probability": 0.35,
         "is_other": true
+      },
+      "likely_winner": {
+        "label": "C\u00f4te d'Ivoire",
+        "side": "away",
+        "probability": 0.785
       },
       "all_outcomes": [
         {
@@ -8281,6 +8556,11 @@
         "probability": 0.35,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "Germany",
+        "side": "away",
+        "probability": 0.565
+      },
       "all_outcomes": [
         {
           "home_goals": null,
@@ -8293,7 +8573,7 @@
           "home_goals": 0,
           "away_goals": 1,
           "label": "0-1",
-          "probability": 0.12,
+          "probability": 0.125,
           "is_other": false
         },
         {
@@ -8430,6 +8710,11 @@
         "label": "Any Other Score",
         "probability": 0.35,
         "is_other": true
+      },
+      "likely_winner": {
+        "label": "Japan",
+        "side": "home",
+        "probability": 0.465
       },
       "all_outcomes": [
         {
@@ -8581,6 +8866,11 @@
         "probability": 0.35,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "Netherlands",
+        "side": "away",
+        "probability": 0.665
+      },
       "all_outcomes": [
         {
           "home_goals": 2,
@@ -8730,6 +9020,11 @@
         "label": "Any Other Score",
         "probability": 0.35,
         "is_other": true
+      },
+      "likely_winner": {
+        "label": "United States",
+        "side": "away",
+        "probability": 0.385
       },
       "all_outcomes": [
         {
@@ -8881,6 +9176,11 @@
         "probability": 0.33,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "Paraguay",
+        "side": "home",
+        "probability": 0.455
+      },
       "all_outcomes": [
         {
           "home_goals": null,
@@ -9030,6 +9330,11 @@
         "label": "Any Other Score",
         "probability": 0.35,
         "is_other": true
+      },
+      "likely_winner": {
+        "label": "France",
+        "side": "away",
+        "probability": 0.535
       },
       "all_outcomes": [
         {
@@ -9181,6 +9486,11 @@
         "probability": 0.35,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "Senegal",
+        "side": "home",
+        "probability": 0.6950000000000001
+      },
       "all_outcomes": [
         {
           "home_goals": 3,
@@ -9330,6 +9640,11 @@
         "label": "Any Other Score",
         "probability": 0.35,
         "is_other": true
+      },
+      "likely_winner": {
+        "label": "Egypt",
+        "side": "home",
+        "probability": 0.43500000000000005
       },
       "all_outcomes": [
         {
@@ -9481,6 +9796,11 @@
         "probability": 0.35,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "Belgium",
+        "side": "away",
+        "probability": 0.765
+      },
       "all_outcomes": [
         {
           "home_goals": null,
@@ -9631,6 +9951,11 @@
         "probability": 0.34,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "Cabo Verde",
+        "side": "home",
+        "probability": 0.375
+      },
       "all_outcomes": [
         {
           "home_goals": 3,
@@ -9650,7 +9975,7 @@
           "home_goals": 0,
           "away_goals": 0,
           "label": "0-0",
-          "probability": 0.43500000000000005,
+          "probability": 0.44,
           "is_other": false
         },
         {
@@ -9778,8 +10103,13 @@
         "home_goals": null,
         "away_goals": null,
         "label": "Any Other Score",
-        "probability": 0.345,
+        "probability": 0.35,
         "is_other": true
+      },
+      "likely_winner": {
+        "label": "Spain",
+        "side": "away",
+        "probability": 0.595
       },
       "all_outcomes": [
         {
@@ -9814,7 +10144,7 @@
           "home_goals": null,
           "away_goals": null,
           "label": "Any Other Score",
-          "probability": 0.345,
+          "probability": 0.35,
           "is_other": true
         },
         {
@@ -9930,6 +10260,11 @@
         "label": "Any Other Score",
         "probability": 0.35,
         "is_other": true
+      },
+      "likely_winner": {
+        "label": "England",
+        "side": "away",
+        "probability": 0.755
       },
       "all_outcomes": [
         {
@@ -10071,7 +10406,7 @@
         "home_goals": 3,
         "away_goals": 1,
         "label": "3-1",
-        "probability": 0.455,
+        "probability": 0.46,
         "is_other": false
       },
       "other_score": {
@@ -10081,25 +10416,30 @@
         "probability": 0.35,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "Croatia",
+        "side": "home",
+        "probability": 0.595
+      },
       "all_outcomes": [
         {
           "home_goals": 3,
           "away_goals": 1,
           "label": "3-1",
-          "probability": 0.455,
-          "is_other": false
-        },
-        {
-          "home_goals": 3,
-          "away_goals": 2,
-          "label": "3-2",
-          "probability": 0.455,
+          "probability": 0.46,
           "is_other": false
         },
         {
           "home_goals": 3,
           "away_goals": 0,
           "label": "3-0",
+          "probability": 0.46,
+          "is_other": false
+        },
+        {
+          "home_goals": 3,
+          "away_goals": 2,
+          "label": "3-2",
           "probability": 0.455,
           "is_other": false
         },
@@ -10142,7 +10482,7 @@
           "home_goals": 2,
           "away_goals": 1,
           "label": "2-1",
-          "probability": 0.115,
+          "probability": 0.11,
           "is_other": false
         },
         {
@@ -10230,6 +10570,11 @@
         "label": "Any Other Score",
         "probability": 0.335,
         "is_other": true
+      },
+      "likely_winner": {
+        "label": "Austria",
+        "side": "away",
+        "probability": 0.445
       },
       "all_outcomes": [
         {
@@ -10381,6 +10726,11 @@
         "probability": 0.25,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "Argentina",
+        "side": "away",
+        "probability": 0.815
+      },
       "all_outcomes": [
         {
           "home_goals": null,
@@ -10531,6 +10881,11 @@
         "probability": 0.35,
         "is_other": true
       },
+      "likely_winner": {
+        "label": "Portugal",
+        "side": "away",
+        "probability": 0.465
+      },
       "all_outcomes": [
         {
           "home_goals": 1,
@@ -10680,6 +11035,11 @@
         "label": "Any Other Score",
         "probability": 0.34,
         "is_other": true
+      },
+      "likely_winner": {
+        "label": "DR Congo",
+        "side": "home",
+        "probability": 0.42500000000000004
       },
       "all_outcomes": [
         {
