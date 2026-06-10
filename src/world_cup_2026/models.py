@@ -63,12 +63,22 @@ class LikelyWinnerOutcome(BaseModel):
         return round(1.0 / self.probability, 2)
 
 
+class MoneylineOdds(BaseModel):
+    home: LikelyWinnerOutcome
+    away: LikelyWinnerOutcome
+    draw: LikelyWinnerOutcome
+
+    @property
+    def likely_winner(self) -> LikelyWinnerOutcome:
+        return max((self.home, self.away, self.draw), key=lambda o: o.probability)
+
+
 class MatchExactScoreResult(BaseModel):
     fixture: MatchFixture
     found: bool
     top_score: ExactScoreOutcome | None = None
     other_score: ExactScoreOutcome | None = None
-    likely_winner: LikelyWinnerOutcome | None = None
+    moneyline: MoneylineOdds | None = None
     all_outcomes: list[ExactScoreOutcome] = Field(default_factory=list)
     error: str | None = None
 

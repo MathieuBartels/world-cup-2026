@@ -63,13 +63,15 @@ def print_report(report: ExactScoresReport) -> None:
                 odds_str = f"{odds:.2f}" if odds else "—"
                 console.print(f"  [green]{header}[/green]")
                 console.print(f"    Top exact score: [bold]{top.display_label}[/bold]  ({pct:.1f}% · {odds_str} decimal)")
-                if result.likely_winner:
-                    w = result.likely_winner
+                if result.moneyline:
+                    w = result.moneyline.likely_winner
                     w_odds = w.decimal_odds
                     w_odds_str = f"{w_odds:.2f}" if w_odds else "—"
+                    draw_pct = result.moneyline.draw.probability * 100
                     console.print(
                         f"    Likeliest winner: [bold]{w.label}[/bold]  ({w.probability * 100:.1f}% · {w_odds_str} decimal)"
                     )
+                    console.print(f"    Draw likelihood: {draw_pct:.1f}%")
                 console.print(f"    [link={fixture.polymarket_url}]{fixture.polymarket_url}[/link]")
             else:
                 console.print(f"  [yellow]{header}[/yellow]")
@@ -112,10 +114,10 @@ def write_markdown_report(report: ExactScoresReport, output_path: Path) -> None:
         lines.append(f"## Group {group}")
         lines.append("")
         lines.append(
-            "| Date | Match | Top exact score | Probability | Decimal odds | Likeliest winner | Winner % |"
+            "| Date | Match | Top exact score | Probability | Decimal odds | Likeliest winner | Winner % | Draw % |"
         )
         lines.append(
-            "|------|-------|-----------------|-------------|--------------|------------------|----------|"
+            "|------|-------|-----------------|-------------|--------------|------------------|----------|--------|"
         )
         for result in sorted(grouped[group], key=lambda r: (r.fixture.date, r.fixture.match_number)):
             fixture = result.fixture
@@ -125,17 +127,19 @@ def write_markdown_report(report: ExactScoresReport, output_path: Path) -> None:
                 pct = top.probability * 100
                 odds = top.decimal_odds
                 odds_str = f"{odds:.2f}" if odds else "—"
-                if result.likely_winner:
-                    winner = result.likely_winner.label
-                    winner_pct = f"{result.likely_winner.probability * 100:.1f}%"
+                if result.moneyline:
+                    winner = result.moneyline.likely_winner.label
+                    winner_pct = f"{result.moneyline.likely_winner.probability * 100:.1f}%"
+                    draw_pct = f"{result.moneyline.draw.probability * 100:.1f}%"
                 else:
                     winner = "—"
                     winner_pct = "—"
+                    draw_pct = "—"
                 lines.append(
-                    f"| {fixture.date} | {match} | **{top.display_label}** | {pct:.1f}% | {odds_str} | {winner} | {winner_pct} |"
+                    f"| {fixture.date} | {match} | **{top.display_label}** | {pct:.1f}% | {odds_str} | {winner} | {winner_pct} | {draw_pct} |"
                 )
             else:
-                lines.append(f"| {fixture.date} | {match} | — | — | — | — | — |")
+                lines.append(f"| {fixture.date} | {match} | — | — | — | — | — | — |")
         lines.append("")
 
     output_path.parent.mkdir(parents=True, exist_ok=True)

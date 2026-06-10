@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Any, Literal
 
-from world_cup_2026.models import LikelyWinnerOutcome, MatchFixture
+from world_cup_2026.models import LikelyWinnerOutcome, MatchFixture, MoneylineOdds
 from world_cup_2026.polymarket.client import PolymarketClient
 from world_cup_2026.polymarket.prices import market_probability
 
@@ -51,16 +51,17 @@ def parse_moneyline_event(
     return outcomes
 
 
-def pick_likely_winner(outcomes: list[LikelyWinnerOutcome]) -> LikelyWinnerOutcome | None:
-    if not outcomes:
+def build_moneyline_odds(outcomes: list[LikelyWinnerOutcome]) -> MoneylineOdds | None:
+    by_side = {o.side: o for o in outcomes}
+    if not {"home", "away", "draw"}.issubset(by_side):
         return None
-    return max(outcomes, key=lambda o: o.probability)
+    return MoneylineOdds(home=by_side["home"], away=by_side["away"], draw=by_side["draw"])
 
 
-def fetch_likely_winner(
+def fetch_moneyline(
     client: PolymarketClient,
     fixture: MatchFixture,
-) -> LikelyWinnerOutcome | None:
+) -> MoneylineOdds | None:
     try:
         event = client.get_event_by_slug(fixture.polymarket_slug)
     except Exception:  # noqa: BLE001
@@ -68,4 +69,4 @@ def fetch_likely_winner(
     if event is None:
         return None
     outcomes = parse_moneyline_event(event, fixture)
-    return pick_likely_winner(outcomes)
+    return build_moneyline_odds(outcomes)

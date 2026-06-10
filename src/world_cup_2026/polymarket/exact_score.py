@@ -5,7 +5,7 @@ from typing import Any
 
 from world_cup_2026.models import ExactScoreOutcome, MatchExactScoreResult, MatchFixture
 from world_cup_2026.polymarket.client import PolymarketClient
-from world_cup_2026.polymarket.moneyline import fetch_likely_winner
+from world_cup_2026.polymarket.moneyline import fetch_moneyline
 from world_cup_2026.polymarket.prices import market_probability
 
 # "Exact Score: Mexico 1 - 0 South Africa?" or "Exact Score: Mexico 2 – 1 South Africa?"
@@ -65,7 +65,7 @@ def fetch_exact_scores_for_fixture(
     client: PolymarketClient,
     fixture: MatchFixture,
 ) -> MatchExactScoreResult:
-    likely_winner = fetch_likely_winner(client, fixture)
+    moneyline = fetch_moneyline(client, fixture)
 
     try:
         event = client.get_event_by_slug(fixture.exact_score_slug)
@@ -73,7 +73,7 @@ def fetch_exact_scores_for_fixture(
         return MatchExactScoreResult(
             fixture=fixture,
             found=False,
-            likely_winner=likely_winner,
+            moneyline=moneyline,
             error=str(exc),
         )
 
@@ -81,7 +81,7 @@ def fetch_exact_scores_for_fixture(
         return MatchExactScoreResult(
             fixture=fixture,
             found=False,
-            likely_winner=likely_winner,
+            moneyline=moneyline,
             error="exact-score event not found",
         )
 
@@ -90,7 +90,7 @@ def fetch_exact_scores_for_fixture(
         return MatchExactScoreResult(
             fixture=fixture,
             found=False,
-            likely_winner=likely_winner,
+            moneyline=moneyline,
             error="no exact-score markets in event",
         )
 
@@ -100,6 +100,6 @@ def fetch_exact_scores_for_fixture(
         found=top is not None,
         top_score=top,
         other_score=other,
-        likely_winner=likely_winner,
+        moneyline=moneyline,
         all_outcomes=sorted(outcomes, key=lambda o: o.probability, reverse=True),
     )
